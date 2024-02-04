@@ -109,11 +109,7 @@ with open(file_path) as file:
         # weka_dict[]
         # print(index)
         # break
-
-#%%
-
-#%%
-maxi
+å
 #%%
 unique_ids = set()
 transactions = []

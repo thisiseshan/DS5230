@@ -80,7 +80,6 @@ def eulcid_smart_mode(X,Y):
     dist = np.sqrt(sum_squared_diff)
     return dist
 
-# image_norm_subset.shape
 
 #%%
 epic_dist = np.zeros((10,10))
@@ -96,10 +95,7 @@ pd.DataFrame(epic_dist).to_csv('epic_dist.csv')
 
 #%%
 # COSINE SIMILARITY
-from scipy.spatial.distance import cdist
-
-# Flattenning for vector babY!!!
-# flattened_images = images_normalized.reshape(images_norm_subset.shape[0], -1)
+from scipy.spatial.distance import cdistå
 
 
 cosine_distances = cdist(flattened_images, flattened_images, metric='cosine')
@@ -192,9 +188,10 @@ print(f"Validation Accuracy: {knn_precomputed.score(val_indices, y[val_indices])
 
 #%%
 
+len(train_indices)
 
-
-
+#%%
+knn2()
 
 
 
