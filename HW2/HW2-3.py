@@ -164,6 +164,4 @@ print("Number of points: ", n_points2)
 
 
 
-
-
 #%%
