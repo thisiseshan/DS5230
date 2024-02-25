@@ -81,7 +81,6 @@ class sexy_DBSCAN:
                     neighbours = neighbours + neighbour_neighbours
             i+=1
         
-
     
     def _dbscan(self, points):
         cluster_label = 0
@@ -119,7 +118,7 @@ dbscan.plot(dbscan_df)
 
 circles_df = pd.read_csv('/Users/eshan/Documents/DS 5230/HW3/circles.csv')
 blobs_df = pd.read_csv('/Users/eshan/Documents/DS 5230/HW3/blobs.csv')
-moon_df = pd.read_csv('/Users/eshan/Documents/DS 5230/HW3/moon.csv')
+moon_df = pd.read_csv('/Users/eshan/Documents/DS 5230/HW3/moons.csv')
 
 circles_df.rename(columns={"Xcircle_X1": 'x', "Xcircle_X2": "y"}, inplace=True)
 blobs_df.rename(columns={"Xblobs_X1": 'x', "Xblobs_X2": "y"}, inplace=True)
