@@ -25,7 +25,7 @@ labels = target.astype(int)
 images = np.reshape(data, (-1, 28, 28))
 images_normalized = images / 255.0
 images_normalized.shape
-
+#%%
 images_stanadardized = (images_normalized - np.mean(images_normalized, axis=0)) / np.std(images_normalized)
 #%%
 X_train, X_test, y_train, y_test = train_test_split(images_stanadardized.reshape((70000, 28*28)), labels, test_size=0.2, random_state=69)

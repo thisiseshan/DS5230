@@ -39,3 +39,7 @@ X_train.shape
 X_sample = X_train[0:1000]
 #%%
 kmeans = KMeans(n_clusters=10, random_state=0, n_init="auto").fit(X_sample)
+#%%
+kmeans.labels_
+#%%
+
